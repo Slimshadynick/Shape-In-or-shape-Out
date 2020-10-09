@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shape Up or Shape Out</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Draw Shapes!!!</h1>
+    <div class="container">
+      <form action="" class="border border-primary rounded">
+        <div class="form-group container-fluid ">
+          <div class="row">
+            <p class="col-3">Rectancle</p>
+            <label for="height" class="col-1 ">Height</label>
+            <input type="number" class="col-2 form-control" id="rectHeight" />
+            <label for="width" class=" col-1 ">Width</label>
+            <input type="number" class="col-2 form-control" id="rectWidth" />
+            <button type="submit" class="col-3 btn btn-primary" id="rectBtn">
+              Insert
+            </button>
+          </div>
+        </div>
+        <div class="form-group container-fluid">
+          <div class="row">
+            <p class=" col-3">Square</p>
+            <label for="length" class="col-3">Length</label>
+            <input type="number" class="col-3 form-control" id="squareLength" />
+            <button type="submit" class="col-3 btn btn-primary" id="sqrBtn">
+              Insert
+            </button>
+          </div>
+        </div>
+        <div class="form-group container-fluid">
+          <div class="row">
+            <p class="col-3">Circle</p>
+            <label for="radius" class="col-3">Radius</label>
+            <input type="number" class="form-control col-3" id="circleRadius" />
+            <button type="submit" class="btn btn-primary col-3" id="circleBtn">
+              Insert
+            </button>
+          </div>
+        </div>
+        <div class="form-group container-fluid">
+          <div class="row">
+            <p class="col-3">Right Isoceles Triangle</p>
+            <label for="height" class="col-3">Height</label>
+            <input type="number" class="form-control col-3" id="triHeight" />
+            <button type="submit" class="btn btn-primary col-3" id="triBtn">
+              Insert
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div id="drawPanel"></div>
+        <div id="infoPanel">
+          <h3>Info About Shape!!!</h3>
+          <p>Shape Name: <span></span></p>
+          <p>Width: <span></span></p>
+          <p>Height: <span></span></p>
+          <p>Area: <span></span></p>
+          <p>Perimeter: <span></span></p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
